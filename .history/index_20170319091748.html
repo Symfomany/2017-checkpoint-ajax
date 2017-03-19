@@ -18,30 +18,13 @@
 
 <body>
 
-  <nav class="navbar navbar-inverse kaamelott-underline">
-
-    <div class="navbar-header">
-      <a class="navbar-brand kaamelott-font" href="/">Cestpasfaux.com</a>
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-        aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <form class="navbar-form navbar-right">
-        <a href="#" class="btn btn-kaamelott" role="button">Ajouter</a>
-      </form>
-    </div>
-  </nav>
-
   <div class="container">
 
+    <div class="kaamelott-banner jumbotron kaamelott-underline">
+      <h1>C'EST PAS FAUX !</h1>
+      <p>Les meilleurs citations de la serie-TV Kaamelott</p>
+    </div>
 
-    <!-- Liste des citations -->
     <div class="row" id="articlesBody">
 
 
@@ -62,9 +45,8 @@
             </p>
             <span class="hider"></span>
           </div>
-          <p class="item-actions">
-            <a href="#" class="btn btn-danger" role="button">Supprimer</a>
-            <a href="#" class="btn btn-kaamelott" role="button" data-toggle="modal" data-target="#1">Voir plus</a></p>
+          <p class="item-actions"><a href="#" class="btn btn-danger" role="button">Supprimer</a> <a href="#" class="btn btn-kaamelott" role="button"
+              data-toggle="modal" data-target="#1">Voir plus</a></p>
         </div>
       </div>
       <!-- Modal -->
@@ -296,40 +278,41 @@
     </div>
 
 
-    <!-- Formulaire d'ajout des citations -->
-    <div class="row">
-      <div class="col-md-offset-3 col-md-6">
-        <form id="addQuote" action="" method="post">
-          <div class="form-group">
-            <label for="auteur">Auteur de la citation</label>
-            <input type="text" class="form-control" id="auteur" placeholder="Ex: Appius Manilius">
-          </div>
+    <div id="add" class="row">
+      <form action="" method="POST" role="form">
+        <legend>Ajouter une citation</legend>
 
-          <div class="form-group">
-            <label for="citation">Citation</label>
-            <textarea class="form-control" id="citation" placeholder="Citation"></textarea>
-          </div>
+        <div class="form-group">
+          <label for="auteur">Auteur de la citation</label>
+          <input type="text" class="form-control" id="auteur" placeholder="Auteur">
+        </div>
 
-          <div class="form-group">
-            <label for="chapitre">Chapitre de l'épisode</label>
-            <input type="text" class="form-control" id="chapitre" placeholder="Exemple: Livre 7">
-          </div>
+        <div class="form-group">
+          <label for="citation">Citation</label>
+          <input type="text" class="form-control" id="citation" placeholder="Citation">
+        </div>
 
-          <div class="form-group">
-            <label for="episode">Episode de la citation</label>
-            <input type="text" class="form-control" id="episode" placeholder="Ex: 6">
-          </div>
+        <div class="form-group">
+          <label for="chapitre">Chapitre de l'épisode</label>
+          <input type="text" class="form-control" id="chapitre" placeholder="Chapitre">
+        </div>
 
-          <div class="form-group">
-            <label for="picture">Image de la scene</label>
-            <input type="text" class="form-control" id="picture" placeholder="URL:http://">
-          </div>
+        <div class="form-group">
+          <label for="episode">Episode de la citation</label>
+          <input type="text" class="form-control" id="episode" placeholder="Episode">
+        </div>
 
-          <div id="resultForm"></div>
+        <div class="form-group">
+          <label for="picture">Episode de la citation</label>
+          <input type="text" class="form-control" id="picture" placeholder="Image">
+        </div>
 
-          <button type="button" class="btn btn-kaamelott">Ajouter la nouvelle citation</button>
-        </form>
-      </div>
+        <div id="resultForm"></div>
+
+        <button type="button" class="btn btn-kaamelott">Ajouter la nouvelle citation</button>
+      </form>
+
+
     </div>
   </div>
 

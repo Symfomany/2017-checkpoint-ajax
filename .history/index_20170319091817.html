@@ -41,7 +41,7 @@
   <div class="container">
 
 
-    <!-- Liste des citations -->
+    <!--Liste des citations-->
     <div class="row" id="articlesBody">
 
 
@@ -62,9 +62,8 @@
             </p>
             <span class="hider"></span>
           </div>
-          <p class="item-actions">
-            <a href="#" class="btn btn-danger" role="button">Supprimer</a>
-            <a href="#" class="btn btn-kaamelott" role="button" data-toggle="modal" data-target="#1">Voir plus</a></p>
+          <p class="item-actions"><a href="#" class="btn btn-danger" role="button">Supprimer</a> <a href="#" class="btn btn-kaamelott" role="button"
+              data-toggle="modal" data-target="#1">Voir plus</a></p>
         </div>
       </div>
       <!-- Modal -->
@@ -296,40 +295,42 @@
     </div>
 
 
-    <!-- Formulaire d'ajout des citations -->
-    <div class="row">
-      <div class="col-md-offset-3 col-md-6">
-        <form id="addQuote" action="" method="post">
-          <div class="form-group">
-            <label for="auteur">Auteur de la citation</label>
-            <input type="text" class="form-control" id="auteur" placeholder="Ex: Appius Manilius">
-          </div>
+    <!--Formulaire d'ajout des citations '-->
+    <div id="add" class="row">
+      <form action="" method="POST" role="form">
+        <legend>Ajouter une citation</legend>
 
-          <div class="form-group">
-            <label for="citation">Citation</label>
-            <textarea class="form-control" id="citation" placeholder="Citation"></textarea>
-          </div>
+        <div class="form-group">
+          <label for="auteur">Auteur de la citation</label>
+          <input type="text" class="form-control" id="auteur" placeholder="Auteur">
+        </div>
 
-          <div class="form-group">
-            <label for="chapitre">Chapitre de l'épisode</label>
-            <input type="text" class="form-control" id="chapitre" placeholder="Exemple: Livre 7">
-          </div>
+        <div class="form-group">
+          <label for="citation">Citation</label>
+          <input type="text" class="form-control" id="citation" placeholder="Citation">
+        </div>
 
-          <div class="form-group">
-            <label for="episode">Episode de la citation</label>
-            <input type="text" class="form-control" id="episode" placeholder="Ex: 6">
-          </div>
+        <div class="form-group">
+          <label for="chapitre">Chapitre de l'épisode</label>
+          <input type="text" class="form-control" id="chapitre" placeholder="Chapitre">
+        </div>
 
-          <div class="form-group">
-            <label for="picture">Image de la scene</label>
-            <input type="text" class="form-control" id="picture" placeholder="URL:http://">
-          </div>
+        <div class="form-group">
+          <label for="episode">Episode de la citation</label>
+          <input type="text" class="form-control" id="episode" placeholder="Episode">
+        </div>
 
-          <div id="resultForm"></div>
+        <div class="form-group">
+          <label for="picture">Episode de la citation</label>
+          <input type="text" class="form-control" id="picture" placeholder="Image">
+        </div>
 
-          <button type="button" class="btn btn-kaamelott">Ajouter la nouvelle citation</button>
-        </form>
-      </div>
+        <div id="resultForm"></div>
+
+        <button type="button" class="btn btn-kaamelott">Ajouter la nouvelle citation</button>
+      </form>
+
+
     </div>
   </div>
 
